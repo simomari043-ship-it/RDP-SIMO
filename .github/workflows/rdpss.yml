@@ -25,9 +25,9 @@ jobs:
 
     - name: Create RDP User
       run: |
-        net user kamel007 kamel007 /add /Y
-        net localgroup administrators kamel007 /add
-        reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v kamel007 /t REG_DWORD /d 0 /f
+        net user simo003003 simo003003 /add /Y
+        net localgroup administrators simo003003 /add
+        reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v simo003003 /t REG_DWORD /d 0 /f
 
     - name: Start Ngrok and display connection info
       run: |
@@ -64,8 +64,8 @@ jobs:
         Write-Output "||        RDP CONNECTION DETAILS        ||"
         Write-Output "=========================================="
         Write-Output "Address: $tunnelUrl"
-        Write-Output "Username: simo00300"
-        Write-Output "Password: AA123simo123MM123"
+        Write-Output "Username: simo003003"
+        Write-Output "Password: simo003003"
         Write-Output "------------------------------------------"
         Write-Output "1. Open Remote Desktop (Win+R → mstsc)"
         Write-Output "2. Connect to: $tunnelUrl"
